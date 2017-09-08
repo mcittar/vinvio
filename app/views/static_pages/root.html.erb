@@ -1,1 +1,9 @@
+<script type="text/javascript">
+  <% if user_signed_in? %>
+    window.currentUser = <%= render(
+      "auth/user.json.jbuilder",
+      user: current_user
+    ).html_safe %>
+  <% end %>
+</script>
 <div id='root'></div><div>

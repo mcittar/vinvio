@@ -1,10 +1,9 @@
 import React from 'react';
-import GifContainer from './gif_container';
+import SignIn from './auth/sign_in_form';
 
 const Main = ({ children }) => (
   <div id='main'>
-    <GifContainer />
-    { children }
+  	<SignIn />
   </div>
 );
 
