@@ -1,5 +1,29 @@
 {
   "name": "devise-auth",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-jarb": "^1.0.2"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack -w",
+    "boilerplate": "react-jarb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcittar/devise-auth-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcittar/devise-auth-react/issues"
+  },
+  "homepage": "https://github.com/mcittar/devise-auth-react#readme"
 }
