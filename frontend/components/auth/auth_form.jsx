@@ -6,7 +6,8 @@ class AuthForm extends React.Component {
 		super(props);
 		this.state = {
 			email: "",
-			password: ""
+			password: "",
+			password_confirmation: ""
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
@@ -40,7 +41,12 @@ class AuthForm extends React.Component {
     );
   }
 
+
 	render() {
+		let confirm = "";
+		if (this.props.formType === 'signup') {
+			confirm = <label>Confirm Password<input type='password' value={ this.state.password_confirmation } onChange={ this.updateAttribute('password_confirmation') }></input></label>
+		}
 
 		return(
 			<div className="login-form-container">
@@ -51,13 +57,19 @@ class AuthForm extends React.Component {
         </div>
 
         <div>
-					<input value={ this.state.email } onChange={ this.updateAttribute('email') }></input>
-					<input type='password' value={ this.state.password } onChange={ this.updateAttribute('password') }></input>
+        	<label>
+	        	Email
+						<input value={ this.state.email } onChange={ this.updateAttribute('email') }></input>
+					</label>
+					<label>
+						Password
+						<input type='password' value={ this.state.password } onChange={ this.updateAttribute('password') }></input>
+					</label>
+
+					{ confirm }
 					<button onClick={ this.handleSubmit }>Submit</button>
 				</div>
       </div>
-
-			
 		)
 	}
 

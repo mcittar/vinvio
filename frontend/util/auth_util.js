@@ -18,10 +18,21 @@ export const logout = () => {
 	})
 }
 
-export const login = (user) => {
+export const login = user => {
 	return $.ajax({
 		method: 'POST',
 		url: 'users/sign_in.json',
+		data: {
+			user: user,
+			authenticity_token: getMetaContent("csrf-token")
+		}
+	})
+}
+
+export const signup = user => {
+	return $.ajax({
+		method: 'POST',
+		url: 'users.json',
 		data: {
 			user: user,
 			authenticity_token: getMetaContent("csrf-token")
