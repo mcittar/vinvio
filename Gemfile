@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -5,6 +6,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'stripe', '~> 1.26.0'
+gem 'aws-sdk', '< 2.0'
+# gem 'paperclip' 
 gem 'jquery-rails'
 gem 'annotate'
 gem 'devise'
@@ -45,6 +49,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'stripe-ruby-mock'
+  gem 'database_cleaner'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
