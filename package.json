@@ -22,9 +22,14 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
   "scripts": {
     "build": "webpack -w",
-    "boilerplate": "react-jarb"
+    "boilerplate": "react-jarb",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
