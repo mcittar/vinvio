@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-	skip_before_action :authenticate_user!, only: [:new, :create]
+	before_action :authenticate_user!, only: [:create]
 
 	def pickup
 		@sale = Sale.find_by!(guid: params[:guid])
