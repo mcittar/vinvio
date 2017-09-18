@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: wines
+#
+#  id          :integer          not null, primary key
+#  name        :string           not null
+#  price       :integer          not null
+#  description :text             not null
+#  permalink   :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined. If you add columns to the
