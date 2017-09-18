@@ -7,3 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user_1 = User.create({ email: 'test@gmail.com', password: 'password', password_confirmation: 'password' })
+
+clyde = Wine.create(name: 'Clyde Van Dusen', price: 23000, description: 'Hot horse flavor', permalink: 'clyde')
+smilla = Wine.create(name: 'Smilla', price: 33000, description: 'Cold and deadly', permalink: 'smilla')

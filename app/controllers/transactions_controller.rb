@@ -21,8 +21,10 @@ class TransactionsController < ApplicationController
 				email: params[:stripeEmail],
 				stripe_id: charge.id
 			)
+			# redirect to pickup URL on frontend
 		rescue Stripe::CardError => e
 			@error = e
+			# render errors
 		end
 	end
 end
