@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 const sessionLinks = () => (
   <div className="session-links">
     <Link to="/login">Login</Link>
-    &nbsp;&nbsp;
-    <Link to="/signup">Sign up!</Link>
+    <Link to="/signup">Sign up</Link>
   </div>
 );
 

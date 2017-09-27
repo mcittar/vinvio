@@ -1,5 +1,6 @@
 import React from 'react';
 import { isEmpty } from 'lodash';
+import Carousel from '../carousel/carousel_container';
 
 class WineIndex extends React.Component {
 	constructor(props) {
@@ -21,7 +22,7 @@ class WineIndex extends React.Component {
 
 		return(
 			<div>
-				{ wines }
+				<Carousel />
 			</div>
 		)
 	}

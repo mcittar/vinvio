@@ -8,5 +8,6 @@
 
 user_1 = User.create({ email: 'test@gmail.com', password: 'password', password_confirmation: 'password' })
 
-clyde = Wine.create(name: 'Clyde Van Dusen', price: 23000, description: 'Hot horse flavor', permalink: 'clyde')
-smilla = Wine.create(name: 'Smilla', price: 33000, description: 'Cold and deadly', permalink: 'smilla')
+clyde = Wine.create(name: 'Clyde Van Dusen', price: 2300, description: 'Hot horse flavor', permalink: 'clyde')
+smilla = Wine.create(name: 'Smilla', price: 3300, description: 'Cold and deadly', permalink: 'smilla')
+sochi = Wine.create(name:"Sochi", price: 4500, description: 'Approved', permalink: 'sochi')
