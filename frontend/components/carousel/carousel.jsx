@@ -19,7 +19,7 @@ class Carousel extends React.Component {
       Outwines = keys.map(key => {
         return (
           <div key={ key }>
-            <h3>{ wines[key].name }</h3>
+            <img src={ wines[key].permalink }></img>
           </div>
         )
       });

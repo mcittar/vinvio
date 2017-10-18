@@ -8,6 +8,6 @@
 
 user_1 = User.create({ email: 'test@gmail.com', password: 'password', password_confirmation: 'password' })
 
-clyde = Wine.create(name: 'Clyde Van Dusen', price: 2300, description: 'Hot horse flavor', permalink: 'clyde')
-smilla = Wine.create(name: 'Smilla', price: 3300, description: 'Cold and deadly', permalink: 'smilla')
-sochi = Wine.create(name:"Sochi", price: 4500, description: 'Approved', permalink: 'sochi')
+twenty = Wine.create(name: 'Twenty Grand', price: 2300, description: 'Hot horse flavor', permalink: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1508346319/twenty_grand_ghfykl.png')
+alida = Wine.create(name: 'Chateau de Sainte-Alida', price: 3300, description: 'Cold and deadly', permalink: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1508346315/sainte_alida_qckox1.png')
+blank = Wine.create(name:'Blank Slate', price: 4500, description: 'Approved', permalink: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1508346310/blank_slate_u0u9fr.png')
